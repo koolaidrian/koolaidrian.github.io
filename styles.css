@@ -1,0 +1,157 @@
+html{
+  box-sizing: content-box;
+}
+
+body{
+  margin :0;
+  background-color: #f1f1f1;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px 15px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  /*background-color: yellow;*/
+
+}
+
+.G-div1{ /* --HEADER-- */
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end:6;
+  /*border: 4px white dotted;*/
+
+  display: flex;
+  align-items: flex-end;
+
+
+}
+
+.G-div2{ /* --SIDEBAR */
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start:1;
+  grid-column-end: 3;
+  /*background-color: blue;*/
+
+}
+
+.G-div3{
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start:3;
+  grid-column-end: 6;
+  /*background-color: red;*/
+
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bad9b4;
+  height:60%;
+  width: 100%;
+  border: 2px black solid;
+}
+
+.F-div1{
+  border: 2px white dotted;
+  margin: 5px;
+
+}
+
+header{
+  /*border: 1px purple dotted;*/
+  color: #f2f2f2;
+}
+
+
+.Sidebar-container{
+  width: 60%;
+  height: 100%;
+  float: right;
+  background-color: #c4debf;
+  border: 1px black solid;
+}
+
+.S-div1{
+  text-align: center;
+  padding: 5px;
+
+
+}
+
+.flex-mini-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.year{
+  min-width: 15%;
+}
+
+.description{
+  margin-left: 5%;
+}
+
+.Main-container{
+  padding: 10px;
+  border: 1px black solid;
+  background-color: #c4debf;
+
+}
+
+.M-div1{
+
+}
+
+.M-div2{
+
+}
+.M-div3{
+
+}
+.M-div4{
+
+}
+header{
+  text-align: center;
+  padding: 8px 16px;
+}
+
+#profile_pic{
+  display: inline-block;
+  border-radius: 50%;
+  width: 50%;
+  height: 10%;
+
+}
+
+#icon{
+  height: 16px;
+  width: 16px;
+  float:left;
+  margin: 3px;
+}
+
+#social{
+  position: relative;
+  bottom: 5px;
+  height: 24px;
+  width: 24px;
+  float:left;
+  margin: 3px;
+}
+
+hr{
+  border: 0.5px black solid;
+  width: auto;
+}
